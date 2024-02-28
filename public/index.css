@@ -1,0 +1,182 @@
+body {
+    background-color: rgb(16, 16, 17);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* top: 0%;
+    right: 0px;
+    left: 0px; */
+    /* padding: 0; */
+    margin: 0; /*always remember margin 0*/
+}
+
+ header {
+    background-color: rgb(16, 16, 17);
+    /* position: relative;  */
+    width: 100%;
+    height: 250px;
+     /* margin: 0;  */
+    display: flex;
+    flex-direction: column;
+    /* top: 0px; */
+} 
+
+h1 {
+    position: absolute;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+    font-size: 65px;
+    text-align: center;
+    /* background-color: crimson; */
+}
+
+#title {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(16, 16, 17);
+    height: 200px;
+    /* background-color: crimson; */
+}
+
+#toptitle {
+    position: absolute;
+    bottom: 35px;
+}
+
+#bottomtitle {
+    position: absolute;
+    top: 35px;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: block;
+    top: 150px;
+}
+
+#twitter {
+    background-color: aqua;
+    right: 100px;
+}
+
+#linkedin {
+    background-color: greenyellow;
+    right: 50px;
+}
+
+#email {
+    background-color: blanchedalmond;
+    right: 0px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: block;
+}
+
+.menubutton {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 200px;
+    padding: 0px;
+    border-radius: 40%;
+    /* background-color: blue; */
+}
+
+#about {
+    position: absolute;
+    left: 0px;
+    background-color: rgb(27, 202, 114);
+}
+
+#blog {
+    position: absolute;
+    left: 100px;
+    background-color: rgb(27, 202, 114);
+}
+
+#github {
+    position: absolute;
+    left: 200px;
+    background-color: rgb(27, 202, 114);
+}
+
+.socialp {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    width: 100px;
+    height: 50px; /* need to make sure to add the hight or it does odd things */
+    margin: 0;
+
+    top: 8px;
+    
+    /* background-color: green; */
+}
+
+#meatAndPotatoes {
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-direction: block;
+}
+
+#sidesection {
+    position: absolute;
+    width: 25%;
+    height: 90%;
+    right: 0%;
+    top: 5%;
+    bottom: 5%;
+    background-color: rgb(16, 16, 17);
+}
+
+hr {
+    position: absolute;
+    border-top: 1px solid black;
+    top: 50%;
+    width: 100%;
+
+}
+
+#mainbody {
+    position: absolute;
+
+    top: 5%;
+    bottom: 5%;
+    left: 25%;
+
+    width: 50%;
+    height: 90%;
+    border: solid 2px;
+    border-color: rgb(35, 195, 94);
+    border-radius: 50px;
+    padding: 20px;
+
+    background-color: rgb(16, 16, 17);
+    color: white;
+}
+
+#picture{
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 0%;
+
+    width: 25%;
+    height: 90%;
+
+    background-color: rgb(16, 16, 17);
+}
