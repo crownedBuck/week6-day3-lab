@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const blogButtonSelected = document.querySelector("#blog")
+// const blogButtonSelected = document.querySelector("#blog")
 
 const baseURL = `http://localhost:4000/`
 
@@ -17,4 +17,4 @@ module.exports = {
     getInfo: getInfo
 }
 
-blogButtonSelected.addEventListener('click', getInfo)
+document.querySelector("#blog").addEventListener('click', getInfo)
