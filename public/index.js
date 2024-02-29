@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 const blogButtonSelected = document.querySelector("#blog")
 
 const baseURL = `http://localhost:4000/`
