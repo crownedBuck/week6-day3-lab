@@ -17,4 +17,4 @@ module.exports = {
     getInfo: getInfo
 }
 
-document.querySelector("#blog").addEventListener('click', getInfo)
+document.getElementById('blog').addEventListener('click', getInfo);
