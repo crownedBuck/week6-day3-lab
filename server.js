@@ -1,7 +1,15 @@
 const express = require('express')
+const axios = require('axios')
+const cors = require('cors')
+
+const {
+    getInfo
+
+} = require('./public/index')
 
 const app = express()
 
+app.use(cors())
 app.use(express.static(`${__dirname}/public`))
 
 // include and initialize the rollbar library with your access token
@@ -14,6 +22,11 @@ var rollbar = new Rollbar({
 
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
+
+
+
+app.get(`/get`, getInfo)
+
 
 app.listen(4000, () => console.log(
     'So long and thank you for the fish'
