@@ -11,10 +11,12 @@ const baseURL = `http://localhost:4000/`
 // })
 
 const getInfo = () => axios.post(`${baseURL}get`).then(res => {
-//     console.log(res.data)
-// }).catch(err => {
-//     rollbar.error(`It didn't work!!! ${err}`)
-//     console.log("It didn't work")
+    try {
+        nonExistentFunction();
+      } catch (error) {
+        rollbar.error(`It didn't work!!! ${error}`)
+      }
+      
 
 })
 
