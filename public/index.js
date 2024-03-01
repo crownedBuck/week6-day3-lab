@@ -20,4 +20,4 @@ const getInfo = () => axios.post(`${baseURL}get`).then(res => {
 
 })
 
-// aboutButtonSelected.addEventListener('click', getInfo)
+aboutButtonSelected.addEventListener('click', getInfo)
