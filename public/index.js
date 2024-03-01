@@ -10,7 +10,8 @@ const baseURL = `http://localhost:4000/`
 //   captureUnhandledRejections: true,
 // })
 
-const getInfo = () => axios.post(`${baseURL}get`).then(res => {
+// const getInfo = () => axios.post(`${baseURL}get`).then(res => {
+    const getInfo = () => {
     console.log("it was pushed")
     try {
         nonExistentFunction();
@@ -21,6 +22,6 @@ const getInfo = () => axios.post(`${baseURL}get`).then(res => {
       }
       
 
-})
+}
 
 aboutButtonSelected.addEventListener('click', getInfo)
