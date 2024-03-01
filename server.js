@@ -1,11 +1,12 @@
 const express = require('express')
 const axios = require('axios')
 const cors = require('cors')
+console.log("server.js is running")
 
 const {
     getInfo
 
-} = require('./public/index')
+} = require('./controller.js')
 
 const app = express()
 
