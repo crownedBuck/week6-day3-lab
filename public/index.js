@@ -1,5 +1,5 @@
 console.log("index.js is running")
-// const aboutButtonSelected = document.querySelector("#about")
+const aboutButtonSelected = document.querySelector("#about")
 
 const baseURL = `http://localhost:4000/`
 
@@ -18,4 +18,4 @@ const getInfo = () => axios.post(`${baseURL}get`).then(res => {
 
 })
 
-// aboutButtonSelected.addEventListener('click', getInfo)
+aboutButtonSelected.addEventListener('click', getInfo)
