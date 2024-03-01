@@ -25,8 +25,13 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 
-
-app.get(`/get`, getInfo)
+try {
+  app.get(`/get`, getInfo)
+} catch (error) {
+  // Handle the error
+  rollbar.error(`It didn't work!!! ${error}`)
+    console.log("It didn't work")
+}
 
 
 app.listen(4000, () => console.log(
